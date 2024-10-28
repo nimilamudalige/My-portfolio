@@ -1,0 +1,156 @@
+
+/* Mobile Small (320px and up) */
+@media (max-width: 320px) {
+  /* Adjust text sizes, padding, and margins for small screens */
+
+  body {
+    font-size: 0.8rem;
+  }
+  #logo-container {
+    font-size: 1rem;
+  }
+  #hero-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #hero-content {
+    width: 100%;
+    padding: 0 30px;
+    row-gap: -2px;
+    
+  }
+
+  #hero-image {
+    width: 100%;
+  }
+
+  #social-media-section img {
+    width: 16px;
+    height: 16px;
+    margin: 0 6px;
+  }
+
+  .bio{
+    font-size: 0.5rem;
+    margin-left: 10px;
+    font-optical-sizing: auto;
+
+  }
+  .section-img{
+    width: 100px; 
+    height: 150px;
+    margin-left: 6vw;
+    margin-top: 6px;
+  }
+  
+
+  /* Navigation menu adjustments */
+  nav > ul {
+    display: none; /* Hide main nav on mobile */
+  }
+  .burger {
+    display: block; /* Show burger icon */
+  }
+}
+
+/* Mobile Medium (375px and up) */
+@media (max-width: 375px) {
+  
+  /* Adjust sizes and layout as needed */
+  #hero-content {
+    padding: 0 20px;
+  }
+}
+
+/* Mobile Large (425px and up) */
+@media (max-width: 425px) {
+  /* Adjust elements to make use of larger mobile width */
+  .bio {
+    font-size: 1.1rem;
+  }
+  #social-media-section {
+    flex-direction: column;
+  }
+}
+
+/* Tablet Devices (768px and up) */
+@media (max-width: 768px) {
+  #logo-container {
+    font-size: 1.1rem;
+  }
+  .skill-pic {
+    grid-template-columns: 1fr 1fr;
+  }
+  #about, #services, #projects {
+    width: 80vw;
+    margin: 10vw auto;
+  }
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(12, 12, 41);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    display: none;
+  }
+  nav > ul.show {
+    display: flex;
+  }
+}
+
+/* Laptop (1024px and up) */
+@media (max-width: 1024px) {
+  #hero-content {
+    padding: 0 40px;
+  }
+  .container {
+    width: 90%;
+  }
+  #about, #services, #projects {
+    width: 70vw;
+  }
+}
+
+/* Laptop Large (1440px and up) */
+@media (max-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+  #about, #services, #projects {
+    width: 65vw;
+  }
+}
+
+
+/* Default burger icon hidden on larger screens */
+.burger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+/* Mobile styles for burger menu */
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+  nav > ul {
+    flex-direction: column;
+    background-color: rgb(12, 12, 41);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 30%;
+    display: none; /* Hidden by default */
+  }
+  nav > ul.show {
+    display: flex;
+    transition: right 0.4s ease;
+    /* Display on click */
+  }
+}
